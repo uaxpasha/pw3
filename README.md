@@ -16,7 +16,7 @@ Welcome to the Playwright Framework for automation testing build by Pavlo Kokhan
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/playwright-framework.git
+   git clone https://github.com/uaxpasha/pw3.git
 
 
    Dependencies
