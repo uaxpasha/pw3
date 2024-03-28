@@ -1,0 +1,23 @@
+{
+  "name": "pw-3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "allure": "npx allure generate ./allure-results --clean",
+    "test": "npx cross-env playwright test --project=chromium --trace on"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.24",
+    "allure-playwright": "^2.15.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.7",
+    "common-js": "^0.3.8",
+    "moment": "^2.30.1"
+  }
+}

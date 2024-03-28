@@ -1,0 +1,13 @@
+{
+    "include": [
+        "./**/*"
+    ],
+    "exclude": [
+        "./dist/**/*",
+        "**/*playwright.config.ts",
+    ],
+    "compilerOptions": {
+        "module": "CommonJS" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+        "esModuleInterop": true, // for import moment from 'moment'
+    }
+}
