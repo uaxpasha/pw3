@@ -1,7 +1,5 @@
 # Playwright Framework for Automation Testing
 
-![Playwright Logo]([https://playwright.dev/img/logo.png](https://playwright.dev/img/playwright-logo.svg))
-
 Welcome to the Playwright Framework for automation testing! This framework is built using TypeScript and Playwright, providing a powerful toolset for writing end-to-end UI and API tests.
 
 ## Features
