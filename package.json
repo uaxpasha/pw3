@@ -13,9 +13,11 @@
   "devDependencies": {
     "@playwright/test": "^1.42.1",
     "@types/node": "^20.11.30",
+    "allure-commandline": "^2.27.0",
     "allure-playwright": "^2.15.0"
   },
   "dependencies": {
+    "aws-sdk": "^2.1588.0",
     "axios": "^1.6.7",
     "common-js": "^0.3.8",
     "moment": "^2.30.1",
