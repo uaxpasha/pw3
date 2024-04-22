@@ -21,20 +21,21 @@ export default defineConfig({
   workers: process.env.CI ? 1 : undefined,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   // reporter: 'html',
-  reporter: [
-    ['list'],
-    [
-      'allure-playwright',
-      {
-        environmentInfo: {
-          NODE_VERSION: process.version,
-          OS: process.platform,
-          Environment: process.env.NODE_ENV,
-          // Browser: browser,
-        },
-      },
-    ],
-  ],
+  // reporter: [
+  //   ['list'],
+  //   [
+  //     'allure-playwright',
+  //     {
+  //       environmentInfo: {
+  //         NODE_VERSION: process.version,
+  //         OS: process.platform,
+  //         Environment: process.env.NODE_ENV,
+  //         // Browser: browser,
+  //       },
+  //     },
+  //   ],
+  // ],
+  reporter: [['playwright-tesults-reporter', {'tesults-target': 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE5MWViZjMxLWM2NjYtNGQ1Mi04NzM1LTE1Y2FlZWQxYjQzZCIsImV4cCI6NDEwMjQ0NDgwMDAwMCwidmVyIjoiMCIsInNlcyI6IjY0NzFjMmU2LWYzZTAtNGIzNy1hYzczLTE5YzVlYjJiMGZhNiIsInR5cGUiOiJhcCJ9.umzY_lzr7YX9atVd-ajEW6QzUOFw-F-l5k5g-LDCugseyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6IjE5MWViZjMxLWM2NjYtNGQ1Mi04NzM1LTE1Y2FlZWQxYjQzZC0xNzEyNTgzNTg1NzM2IiwiZXhwIjo0MTAyNDQ0ODAwMDAwLCJ2ZXIiOiIwIiwic2VzIjoiOWJmNGViZWMtM2U1NS00YjNiLWE0NmEtNmUwYWNiNDc5OTc4IiwidHlwZSI6InQifQ.g5xum275JRzn8_vU6WgbrpH4RBbbXPEhuYW1ia9KBCg'}]],
 
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
