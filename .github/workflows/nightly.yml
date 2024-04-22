@@ -1,7 +1,7 @@
 name: nightly
 on:
   schedule:
-    - cron: '38 16 * * *'
+    - cron: '45 16 * * *'
 jobs:
   nightly:
     timeout-minutes: 60
